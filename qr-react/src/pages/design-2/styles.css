@@ -1,25 +1,18 @@
-body{
-    height: auto;
-    overflow: hidden;
-}
-.container-fluid{
-    padding: 0;
-    padding: 2vh 0;
-}
 #gradient{
     background: rgb(30,66,148);
     background: linear-gradient(180deg, rgba(30,66,148, 1) 0%, rgba(45,180,253, 0.5) 100%);
-    height: auto;
+    height: 100vh;
 } 
-@media(max-width: 540px){
+@media (max-width: 540px){
     #gradient{
-        height: 100vh;
+        height: 0;
+        padding: 0; 
     }
 }
 h1{
     color: white;
     font-family: 'Poppins', sans-serif;
-    font-weight:600;
+    font-weight: 600;
 }
 #title{
     font-size: 50px;
@@ -41,9 +34,10 @@ h1{
 }
 
 /*Animations*/
-#gradient, body{
-    -webkit-animation: background-drop  2s ease-in-out 3s both;
-	        animation: background-drop  2s ease-in-out 3s both;
+
+#gradient{
+    -webkit-animation: background-drop 3s ease-in-out both;
+	        animation: background-drop 3s ease-in-out both;
 }
 @media(max-width: 313px){
     #gradient{
@@ -75,8 +69,8 @@ h1{
 }
 @media(max-width: 540px){
     #buttons{
-        -webkit-animation: slide-bottom 0.5s linear 5s both;
-                animation: slide-bottom 0.5s linear 5s both;
+        -webkit-animation: slide-bottom 0.5s linear 3s both;
+                animation: slide-bottom 0.5s linear 3s both;
     }
 }
 @-webkit-keyframes slide-bottom {
@@ -103,23 +97,21 @@ h1{
               opacity: 1;
     }
 }
+
 @media(max-width: 540px){
     @-webkit-keyframes background-drop {
         100% {
-            height: 50vh;
-            overflow: auto;
+            height: 100vh;
         }
       }
       @keyframes background-drop {
         100% {
-            height: 50vh;
-            overflow: auto;
-
+            height: 100vh;
         }
     }
+    
 }
 
     
-
 
 

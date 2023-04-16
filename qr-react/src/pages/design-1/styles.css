@@ -1,0 +1,119 @@
+body{
+    height: auto;
+    overflow: hidden;
+}
+.container-fluid{
+    padding: 0;
+    padding: 2vh 0;
+}
+#gradient-up{
+    background: rgb(30,66,148);
+    background: linear-gradient(180deg, rgba(30,66,148, 1) 0%, rgba(45,180,253, 0.5) 100%);
+    height: auto;
+} 
+@media(max-width: 540px){
+    #gradient-up{
+        height: 100vh;
+    }
+}
+h1{
+    color: white;
+    font-weight:600;
+}
+#title{
+    font-size: 50px;
+    color: rgb(30,66,148);
+}
+#buttons{
+    margin-top: 5vh;
+}
+#buttons a{
+    width: 100%;
+    margin-bottom: 3vh;
+    padding: 20px;
+    font-size: 20px;
+}
+#buttons a img{
+    height: 50px;
+    float: left;   
+    vertical-align: middle;
+}
+
+/*Animations*/
+#gradient-up, body{
+    -webkit-animation: background-up  2s ease-in-out 3s both;
+	        animation: background-up  2s ease-in-out 3s both;
+}
+@media(max-width: 313px){
+    #gradient-up{
+        animation: none;
+        height: auto;
+    }
+}
+@media(max-height: 800px){
+    #gradient-up{
+        animation: none;
+        height: auto;
+    }
+}
+.slide-bottom {
+    -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+#pre-title{
+    -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+            animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+#title{
+    -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+            animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both
+}
+#buttons{
+    -webkit-animation: slide-bottom 0.5s linear 3s both;
+            animation: slide-bottom 0.5s linear 3s both;
+}
+@media(max-width: 540px){
+    #buttons{
+        -webkit-animation: slide-bottom 0.5s linear 5s both;
+                animation: slide-bottom 0.5s linear 5s both;
+    }
+}
+@-webkit-keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(5px);
+              transform: translateY(5px);
+              opacity: 1;
+    }
+  }
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+              opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(5px);
+              transform: translateY(5px);
+              opacity: 1;
+    }
+}
+@media(max-width: 540px){
+    @-webkit-keyframes background-up {
+        100% {
+            height: 50vh;
+            overflow: auto;
+        }
+      }
+      @keyframes background-up {
+        100% {
+            height: 50vh;
+            overflow: auto;
+
+        }
+    }
+}
