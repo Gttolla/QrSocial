@@ -1,3 +1,4 @@
+
 #gradient{
     background: rgb(30,66,148);
     background: linear-gradient(180deg, rgba(30,66,148, 1) 0%, rgba(45,180,253, 0.5) 100%);
@@ -20,17 +21,6 @@ h1{
 }
 #buttons{
     margin-top: 5vh;
-}
-#buttons a{
-    width: 100%;
-    margin-bottom: 3vh;
-    padding: 20px;
-    font-size: 20px;
-}
-#buttons a img{
-    height: 50px;
-    float: left;   
-    vertical-align: middle;
 }
 
 /*Animations*/
@@ -63,12 +53,12 @@ h1{
     -webkit-animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
             animation: slide-bottom 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both
 }
-#buttons{
+.btn{
     -webkit-animation: slide-bottom 0.5s linear 3s both;
             animation: slide-bottom 0.5s linear 3s both;
 }
 @media(max-width: 540px){
-    #buttons{
+    .btn{
         -webkit-animation: slide-bottom 0.5s linear 3s both;
                 animation: slide-bottom 0.5s linear 3s both;
     }

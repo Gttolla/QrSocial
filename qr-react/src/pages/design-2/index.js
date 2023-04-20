@@ -14,9 +14,9 @@ function Design2 () {
             <h1 id="title">POLI DESIGN</h1>
           </div>
           <div className="container" id="buttons">
-            <a href="https://www.facebook.com/Poli.DesignArq.Promocional/?locale=pt_BR" className="btn btn-primary" id="fc"><li className="fab fa-facebook-square"></li> Facebook</a>
-            <a href="https://polidesign.com.br" className="btn btn-success" id="st"><li className=" fas fa-globe"></li> Site</a>
-            <a href="mailto:atendimento@polidesign.com.br" className="btn btn-danger" id="em"><li className="fas fa-address-book"></li> Contato</a>
+            <a href="https://www.facebook.com/Poli.DesignArq.Promocional/?locale=pt_BR" className="btn btn-primary" id="fc">Facebook</a>
+            <a href="https://polidesign.com.br" className="btn btn-success" id="st">Site</a>
+            <a href="mailto:atendimento@polidesign.com.br" className="btn btn-danger" id="em">Contato</a>
           </div>
         </div> 
     </main>

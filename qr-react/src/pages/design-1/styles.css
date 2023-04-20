@@ -33,11 +33,6 @@ h1{
     padding: 20px;
     font-size: 20px;
 }
-#buttons a img{
-    height: 50px;
-    float: left;   
-    vertical-align: middle;
-}
 
 /*Animations*/
 #gradient-up, body{
